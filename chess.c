@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -191,22 +192,33 @@ int main () {
 #include <stdbool.h>
 #include <stdlib.h>
 
+=======
+#include <stdbool.h>
+#include <stdlib.h>
+
+>>>>>>> origin/king
 bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
 
 int main () {
 	printf("Welcome to Terminal Chess!\n");
 	printf("Initializing Board...\n")	;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	int board [8][8] = { {5, 4, 3, 2, 1, 3, 4, 5}
 				             , {6, 6, 6, 6, 6, 6, 6, 6}
 				 	           , {0, 0, 0, 0, 0, 0, 0, 0}
 					           , {0, 0, 0, 0, 0, 0, 0, 0}
 =======
+=======
+>>>>>>> origin/king
 	int board [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
 		           , {6, 6, 6, 6, 6, 6, 6, 6}
 				 	     , {0, 0, 0, 0, 0, 0, 0, 0}
 					     , {0, 0, 0, 0, 0, 0, 0, 0}
+<<<<<<< HEAD
 >>>>>>> origin/Spennys_branch
+=======
+>>>>>>> origin/king
 				             , {0, 0, 0, 0, 0, 0, 0, 0} 
 				             , {0, 0, 0, 0, 0, 0, 0, 0}
 				             , {6, 6, 6, 6, 6, 6, 6, 6}
@@ -242,11 +254,20 @@ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
 	int piecesInWay = 0;
 	if (board[x1][x2] == 0) {
 		return false;
+<<<<<<< HEAD
 	} else if (board[x1][y2] == 1) { // king
 		if (abs(x1 - x2) <= 1 && abs(y1-y2) <= 1) {
 			return true;
 		}
 	} else if (board[x1][y2] == 2) { 
+=======
+	} else if (board[x1][x2] == 1) { 
+		if (abs(x1 - x2) <= 1 && abs(y1-y2) <= 1) {
+			return true;
+		}
+		// king
+	} else if (board[x1][x2] == 2) { 
+>>>>>>> origin/king
 		// queen
 	} else if (board[x1][y2] == 3) {  // bishop
 		while (true) {
