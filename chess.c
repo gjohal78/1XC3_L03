@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -10,6 +11,9 @@
 void showBoard (int board[8][9]) {
 =======
 
+=======
+#include <stdbool.h>
+>>>>>>> origin/gridlines
 
 // ♔ ♕ ♖ ♗ ♘ ♙
 
@@ -25,6 +29,7 @@ void showBoard (int board[8][9]) {
  
 */
 void showBoard (int board[8][8]) {
+<<<<<<< HEAD
 	printf("\n\n╔════════╗\n");
 >>>>>>> origin/Show_Board_Prettier
 	for (int i = 0; i < 8; i++) {
@@ -59,6 +64,17 @@ void showBoard (int board[8][8]) {
 		}
 		printf("\n");
 =======
+=======
+	printf("\n\n┌─┬─┬─┬─┬─┬─┬─┬─┐\n");
+	for (int i = 0; i < 8; i++) {
+//		printf("│"); 
+		bool flag = true;
+		for (int j = 0; j < 8; j++) {
+			if (!flag) {
+				printf("│"); 
+			}
+			flag = false;
+>>>>>>> origin/gridlines
 //			printf(""); 
 			switch (board[i][j]) {
 				case 0: 
@@ -80,15 +96,25 @@ void showBoard (int board[8][8]) {
 					printf("♙");
 			}
 		}
+<<<<<<< HEAD
 		printf("║\n") ;
 >>>>>>> origin/Show_Board_Prettier
 	}
 	printf("╚════════╝\n");
+=======
+		printf("│\n") ;
+		if (i < 7) {
+			printf("├─┼─┼─┼─┼─┼─┼─┼─┤\n") ;
+		}
+	}
+	printf("└─┴─┴─┴─┴─┴─┴─┴─┘\n");
+>>>>>>> origin/gridlines
 }
 
 int main () {
 	printf("Welcome to Terminal Chess!\n");
 	printf("Initializing Board...")	;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	int board [8][9]  = { {5, 4, 3, 1, 2, 3, 4, 5}
@@ -103,13 +129,16 @@ int main () {
 			    } ;
 =======
 	int board [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+=======
+	int board [8][8] = { {5, 4, 3, 2, 1, 3, 4, 5}
+>>>>>>> origin/gridlines
 				       , {6, 6, 6, 6, 6, 6, 6, 6}
 				 	   , {0, 0, 0, 0, 0, 0, 0, 0}
 					   , {0, 0, 0, 0, 0, 0, 0, 0}
 				       , {0, 0, 0, 0, 0, 0, 0, 0} 
 				       , {0, 0, 0, 0, 0, 0, 0, 0}
 				       , {6, 6, 6, 6, 6, 6, 6, 6}
-				       , {5, 4, 3, 1, 2, 3, 4, 5}
+				       , {5, 4, 3, 2, 1, 3, 4, 5}
 				       } ;
 >>>>>>> origin/Show_Board_Prettier
 =======
