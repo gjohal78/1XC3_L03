@@ -6,6 +6,7 @@
 
 
 // ♔ ♕ ♖ ♗ ♘ ♙
+<<<<<<< HEAD
 void showBoard (int board[8][9]) {
 =======
 
@@ -28,6 +29,12 @@ void showBoard (int board[8][8]) {
 >>>>>>> origin/Show_Board_Prettier
 	for (int i = 0; i < 8; i++) {
 		printf("║"); 
+=======
+void showBoard (int board[8][8]) {
+	printf("\n\n  01234567\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d ", i); 
+>>>>>>> origin/coordinates
 		for (int j = 0; j < 8; j++) {
 <<<<<<< HEAD
 			if (board[i][j] == 0) {
@@ -41,11 +48,11 @@ void showBoard (int board[8][8]) {
  			} else if (board[i][j] == 2) {
 				printf("♕");
 			} else if (board[i][j] == 3) {
-				printf("♖");
-			} else if (board[i][j] == 4) {
 				printf("♗");
-			} else if (board[i][j] == 5) {
+			} else if (board[i][j] == 4) {
 				printf("♘");
+			} else if (board[i][j] == 5) {
+				printf("♖");
 			} else if (board[i][j] == 6) {
 				printf("♙");
 			}
@@ -83,6 +90,7 @@ int main () {
 	printf("Welcome to Terminal Chess!\n");
 	printf("Initializing Board...")	;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	int board [8][9]  = { {5, 4, 3, 1, 2, 3, 4, 5}
 		            , {6, 6, 6, 6, 6, 6, 6, 6}
 			    , {0, 0, 0, 0, 0, 0, 0, 0}
@@ -104,14 +112,29 @@ int main () {
 				       , {5, 4, 3, 1, 2, 3, 4, 5}
 				       } ;
 >>>>>>> origin/Show_Board_Prettier
+=======
+	int board [8][8]  = { {5, 4, 3, 1, 2, 3, 4, 5}
+ 				        , {6, 6, 6, 6, 6, 6, 6, 6}
+ 				 	    , {0, 0, 0, 0, 0, 0, 0, 0}
+ 					    , {0, 0, 0, 0, 0, 0, 0, 0}
+ 				        , {0, 0, 0, 0, 0, 0, 0, 0} 
+ 				        , {0, 0, 0, 0, 0, 0, 0, 0}
+ 				        , {6, 6, 6, 6, 6, 6, 6, 6}
+				        , {5, 4, 3, 1, 2, 3, 4, 5}
+				        } ;
+>>>>>>> origin/coordinates
 	printf("Board Initialized!") ;
 	
 	showBoard(board);
 	
 	// rest of game...
 	
+<<<<<<< HEAD
 	printf("Terminating...") ;
 <<<<<<< HEAD
+=======
+	printf("Terminating...");
+>>>>>>> origin/coordinates
 	
 }
 >>>>>>> origin/Show_Board
