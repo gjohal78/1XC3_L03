@@ -1,13 +1,35 @@
 #include <stdio.h>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 // ♔ ♕ ♖ ♗ ♘ ♙
 void showBoard (int board[8][9]) {
+=======
+
+
+// ♔ ♕ ♖ ♗ ♘ ♙
+
+/* ┌ └ ┐ ┘
+
+├ ┤ ┬ ┴
+ 
+─ │ ┼
+ 
+ might need these...
+ 
+ ╟ ╢ ╧ ╤
+ 
+*/
+void showBoard (int board[8][8]) {
+	printf("\n\n╔════════╗\n");
+>>>>>>> origin/Show_Board_Prettier
 	for (int i = 0; i < 8; i++) {
+		printf("║"); 
 		for (int j = 0; j < 8; j++) {
+<<<<<<< HEAD
 			if (board[i][j] == 0) {
 				if ((i + j) % 2 == 0) {
 					printf(" ");
@@ -29,12 +51,38 @@ void showBoard (int board[8][9]) {
 			}
 		}
 		printf("\n");
+=======
+//			printf(""); 
+			switch (board[i][j]) {
+				case 0: 
+					printf(" ");
+					break;
+				case 1:
+					printf("♔");
+					break;
+				case 2: 
+					printf("♕");
+					break;
+				case 3: 
+					printf("♗");
+					break;
+				case 4: 
+					printf("♘");
+					break;
+				case 5: 
+					printf("♙");
+			}
+		}
+		printf("║\n") ;
+>>>>>>> origin/Show_Board_Prettier
 	}
+	printf("╚════════╝\n");
 }
 
 int main () {
 	printf("Welcome to Terminal Chess!\n");
 	printf("Initializing Board...")	;
+<<<<<<< HEAD
 	int board [8][9]  = { {5, 4, 3, 1, 2, 3, 4, 5}
 		            , {6, 6, 6, 6, 6, 6, 6, 6}
 			    , {0, 0, 0, 0, 0, 0, 0, 0}
@@ -45,6 +93,17 @@ int main () {
 			    , {6, 6, 6, 6, 6, 6, 6, 6}
 			    , {5, 4, 3, 1, 2, 3, 4, 5}
 			    } ;
+=======
+	int board [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+				       , {6, 6, 6, 6, 6, 6, 6, 6}
+				 	   , {0, 0, 0, 0, 0, 0, 0, 0}
+					   , {0, 0, 0, 0, 0, 0, 0, 0}
+				       , {0, 0, 0, 0, 0, 0, 0, 0} 
+				       , {0, 0, 0, 0, 0, 0, 0, 0}
+				       , {6, 6, 6, 6, 6, 6, 6, 6}
+				       , {5, 4, 3, 1, 2, 3, 4, 5}
+				       } ;
+>>>>>>> origin/Show_Board_Prettier
 	printf("Board Initialized!") ;
 	
 	showBoard(board);
@@ -52,6 +111,7 @@ int main () {
 	// rest of game...
 	
 	printf("Terminating...") ;
+<<<<<<< HEAD
 	
 }
 >>>>>>> origin/Show_Board
@@ -110,4 +170,6 @@ int main () {
     
 	printf("Terminating...\n") ;
 >>>>>>> origin/Game_Logic
+=======
+>>>>>>> origin/Show_Board_Prettier
 }
